@@ -2,7 +2,7 @@
 $candidate_id = $_POST['candidate_id'];
     $hostname = "localhost";
     $username = "root";
-    $password = "sri@123###12";
+    $password = "#########";
     $database = "register";
 
     $conn = new mysqli($hostname, $username, $password, $database);
