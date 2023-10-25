@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Candidate</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fun.css">
+</head>
+<body>
+    <h1>Update Candidate</h1>
+    <form action="update.php" method="post">
+        <div class="container">
+            <div class="form-group">
+                <label for="name" class="m-0"><strong>Candidate Id</strong></label>
+                <input type="text" name="candidate_id" required id="candidate_id" class="form-control mt-1 w-100" placeholder="Give Your Id">
+            </div>
+            <div class="form-group">
+                 <label for="name" class="m-0"><strong>Candidate Name</strong></label>
+                 <input type="text" name="name" required id="user" class="form-control mt-1 w-100" placeholder="Give Your Name">
+             </div>
+             <div class="form-group">
+                 <label for="name" class="mt-2"><strong>Party Name</strong></label>
+                 <input type="text" name="party" required id="party" class="form-control mt-0 w-100" placeholder="Enter your Party Name" >
+             </div>
+             <div class="form-group">
+                 <label for="name" class="mt-2"><strong>Adhar Number</strong></label>
+                 <input type="text" name="aadhar" required id="Adhar" class="form-control mt-0 w-100" placeholder="Enter your Adhar Number" >
+             </div>
+             <div class="form-group"><strong>
+                 <label for="name" class="mt-3 mx-4  ">Gender : </label>
+                 <input type="text" name="gender" required class="form-control mt-0 w-100" placeholder="Male/Female/Other">
+             </strong>
+             </div>
+             <div class="form-group">
+                 <label for="name" class="mt-2"><strong> Candidate Address</strong></label>
+                 <input type="text" name="address" id="Address" class="form-control mt-2 w-100 pb-5"  placeholder="Enter your Address" >
+             </div>
+             <div class="form-group mt-4">
+                 <input type="submit" value="Update" class="btn btn-dark text mt-1 w-100 text-center text-uppercase text-light">
+               </div>
+    </form>
+</body>
+</html>

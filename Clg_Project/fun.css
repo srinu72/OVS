@@ -1,0 +1,55 @@
+.bold{
+    background-size: cover;
+    min-height:100vh;
+    position: relative;
+}
+.main{
+  
+}
+.row1{
+    padding: 0%;
+}
+.cvl{
+     color: rgb(69, 67, 65);
+     padding: 15px;
+     text-decoration: none;
+     border: 1px solid whitesmoke;
+     background-color: #31a3e0;
+     border-radius: 20px;
+     font-size: 22px;
+     margin: 20%;
+}
+.cvl:hover{
+    background-color: #60615e;
+    color: #ece5e5;
+}
+.cvl1{
+    color: rgb(69, 67, 65);
+    padding: 15px;
+    text-decoration: none;
+    border: 1px solid whitesmoke;
+    background-color: #31a3e0;
+    border-radius: 20px;
+    font-size: 22px;
+    margin: 20%;
+    
+}
+.cvl2{
+    color: rgb(69, 67, 65);
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid whitesmoke;
+    background-color: #31a3e0;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 20%;
+}
+.c1{
+   padding-top: 5%;
+}
+.c2{
+    padding-top: 8%;
+}
+.c3{
+    padding-top: 8%;
+}

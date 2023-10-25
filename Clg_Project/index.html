@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fun.css">
+</head>
+<body>
+<div 
+class="bold"
+style="background-image: url('./pic/Tt.jpg');"
+ >
+  <div class="color-overlay d-flex justify-content-center align-items-center">
+<div class="pic"></div>
+    <nav class="fixed-top navbar navbar-expand-sm nav-tabs navbar-light border-1">
+        <div class="container">
+            <a class=" navbar-brand text-uppercase">Online Voting System</a>
+            <div class="div" id="nav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link rounded-3 text-dark" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="/Clg_Project/admin_login.html">Admin</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Connect Us</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+</div>
+<div class="mt-5 pt-5 mx-5  text-center">
+    <h4>Happy to see You.....!</h4>
+</div>
+<form action = "login_authentication.php" onload="return myfunction()" onsubmit = "return validation()" method = "POST">
+   <div class="container mx-5 px-5">
+           <div class="form-group">
+                <label for="name" class="mt-5">User Name</label>
+                <input type="text" name="user" id="user" class="form-control mt-1 w-25" placeholder="Give Your Name">
+            </div>
+            
+            <div class="form-group">
+                <label for="name" class="mt-2">PassWord</label>
+                <input type="password" required name="pass" id="pass" class="form-control mt-0 w-25" placeholder="Give your Passcode" >
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-outline-dark mt-3 w-25 text-center border-success text-uppercase" value="Log in">
+               <div  class="mt-1"> <a href="#">Forgot your Passcode ?</a>
+            </div>
+            <div class="form-group">
+                <div class="mt-2">Don't have account sign up please..</div>
+                <button type="button" onclick="sign()" class="btn btn-outline-dark mt-1 w-25 text-center border-primary text-uppercase">SignUp</button>
+              </div>
+</form>
+</div>
+</div>
+</div>
+<script>  
+      function sign(){
+        window.open('/Clg_Project/Pro_signup.html');
+      }     
+    function validation()  
+    {  
+        var id=document.f1.user.value;  
+        var ps=document.f1.pass.value;  
+        if(id.length=="" && ps.length=="") {  
+            alert("User Name and Password fields are empty");  
+            return false;  
+        }  
+        else  
+        {  
+            if(id.length=="") {  
+                alert("User Name is empty");  
+                return false;  
+            }   
+            if (ps.length=="") {  
+            alert("Password field is empty");  
+            return false;  
+            }  
+        }                             
+    }  
+</script>  
+<script src="/index.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/jquery.min.js"></script>
+</body>
+</html>
